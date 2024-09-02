@@ -9,11 +9,11 @@ const PornState = (props) => {
   const [isLoading, setIsLoading] = useState(true);
 
   //TODO: Fetch all porn
-  const fetchPorn = async (pageNo) => {
+  const fetchPorn = async (query, pageNo) => {
     try {
       setIsLoading(true);
       const response = await fetch(
-        `https://www.eporner.com/api/v2/video/search/?query=all&per_page=30&page=${pageNo}&thumbsize=big&order=top-weekly&gay=1&lq=1&format=json`
+        `https://www.eporner.com/api/v2/video/search/?query=${query}&per_page=30&page=${pageNo}&thumbsize=big&order=top-weekly&gay=1&lq=1&format=json`
       );
 
       const json = await response.json();

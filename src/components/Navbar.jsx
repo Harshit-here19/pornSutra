@@ -23,6 +23,9 @@ const Navbar = () => {
             <NavButtons path={pathname} title="Home" to="/" />
           </li>
           <li>
+            <NavButtons path={pathname} title="PornStars" to="/pornstars" />
+          </li>
+          <li>
             <NavButtons path={pathname} title="Art" to="/art" />
           </li>
         </ul>
@@ -49,6 +52,9 @@ const Navbar = () => {
         <ul className="bg-yellow-300 text-white p-4 flex flex-col gap-8 justify-between items-center w-1/3 right-0 absolute rounded-bl-lg animate-appearing z-30">
           <li onClick={() => setMobileMenuOpen(false)}>
             <NavButtons path={pathname} title="Home" to="/" />
+          </li>
+          <li onClick={() => setMobileMenuOpen(false)}>
+            <NavButtons path={pathname} title="PornStars" to="/pornstars" />
           </li>
           <li onClick={() => setMobileMenuOpen(false)}>
             <NavButtons path={pathname} title="Art" to="/art" />

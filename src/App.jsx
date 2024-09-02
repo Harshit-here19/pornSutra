@@ -6,6 +6,8 @@ import ErrorPage from "./components/Utility/ErrorPage";
 
 import PornState from "./context/PornState";
 import Video from "./components/Video";
+import PornStars from "./components/PornStars/PornStars";
+import PornStarDetails from "./components/PornStars/PornStarDetails";
 
 const App = () => {
   // const fetchData = async () => {
@@ -34,6 +36,14 @@ const App = () => {
         {
           path: "/video/:id",
           element: <Video />,
+        },
+        {
+          path: "/pornstars",
+          element: <PornStars />,
+        },
+        {
+          path: "/pornstar/:name",
+          element: <PornStarDetails />,
         },
       ],
     },
