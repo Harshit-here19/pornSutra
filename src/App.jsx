@@ -8,6 +8,7 @@ import PornState from "./context/PornState";
 import Video from "./components/Video";
 import PornStars from "./components/PornStars/PornStars";
 import PornStarDetails from "./components/PornStars/PornStarDetails";
+import Art from "./components/Art/Art";
 
 const App = () => {
   // const fetchData = async () => {
@@ -44,6 +45,10 @@ const App = () => {
         {
           path: "/pornstar/:name",
           element: <PornStarDetails />,
+        },
+        {
+          path: "/art",
+          element: <Art />,
         },
       ],
     },

@@ -22,6 +22,7 @@ const Carousel = (props) => {
   return (
     <>
       <div className="relative">
+        
         <div className="carousel max-w-xl flex">
           {/* Carousel items */}
           {images.map((image) => (
